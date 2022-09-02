@@ -1,0 +1,46 @@
+.hero{
+    max-width: 1600px;
+    @media screen and (min-width:$desktop){
+        background-image: url(../images/hero/hero-desk.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-top: 168px;
+        padding-bottom: 278px;
+    }
+}
+.hero__container{
+    @media screen and (min-width:$desktop){
+        margin-bottom: 70px;
+    }
+}
+.hero__title{
+    @media screen and (min-width:$desktop){
+        font-size: 55px;
+        line-height: 1.36;
+        letter-spacing: 0.02em;
+        max-width: 590px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+}
+.hero__text{
+    @media screen and (min-width:$desktop){
+        font-size: 30px;
+        line-height: 1.33;
+        max-width: 386px;
+    }
+}
+.hero__link{
+    @media screen and (min-width:$desktop){
+        padding: 33px 38px;
+        font-size: 30px;
+        line-height: 2.5;
+        background: radial-gradient(58.24% 712.55% at 50% 54.4%, #F6D88A 0%, #FEE690 64.9%, #FFF0CB 98.75%);
+        box-shadow: 0px 0px 15px #F2CD89;
+        border-radius: 30px 0 30px 0;
+        &:hover,&:focus{
+            background: radial-gradient(58.24% 712.55% at 50% 54.4%, #FEE690 64.9%, #FFF0CB 98.75%);
+            box-shadow: 0px 0px 25px #FEE690;
+        }
+    }
+}

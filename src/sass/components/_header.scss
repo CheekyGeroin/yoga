@@ -1,0 +1,24 @@
+.header{
+    background-color: $mainColor;
+    
+}
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__item{
+    @media screen and (min-width:$desktop){
+        &:not(:last-child){
+            margin-right: 60px;
+        }
+    }
+}
+.nav__link{
+    color: $headerTextColor;
+    @media screen and (min-width:$desktop){
+        font-size: 35px;
+            line-height: 1;
+            letter-spacing: 0.02em;
+    }
+}

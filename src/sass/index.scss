@@ -1,1 +1,11 @@
-
+@import './utils/breakpoints';
+@import './utils/variables';
+@import './utils/normalize';
+@import './components/common';
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/advantages';
+@import './components/timetable';
+@import './components/form';
+@import './components/footer';

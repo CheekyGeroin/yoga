@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: $mainFont;
+    color: $mainColor;
+    font-weight: 500;
+
+}
+ul,li,h1,h2,h3,h4,h5,h6,a,p{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    @media screen and (min-width:$mobile){
+        max-width: $mobile;
+    }
+    @media screen and (min-width:$tablet){
+        max-width: $tablet;
+    }
+    @media screen and (min-width:$desktop){
+        max-width: $desktop;
+    }
+}
