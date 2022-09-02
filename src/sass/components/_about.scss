@@ -1,0 +1,59 @@
+.about{
+    background-color: $mainColor;
+    @media screen and (min-width:$desktop){
+        padding-top: 121px;
+        padding-bottom: 121px;
+    }
+}
+.about__title{
+    color: $secondTitleColor;
+    font-weight: 500;
+    @media screen and(min-width:$desktop){
+        text-align: center;
+        font-size: 35px;
+        line-height: 1;
+        letter-spacing: 0.02em;
+    }
+
+}
+.about__container{
+   @media screen and (min-width:$tablet){
+    display: flex;
+    align-items: flex-end;
+   }
+}
+.about__image{
+    border-radius: 6px;
+    z-index: 100;
+    @media screen and (min-width:$desktop){
+        box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.45);
+    }
+}
+.about__card{
+    background-color: $aboutCardColor;
+    @media screen and (min-width:$desktop){
+        padding: 33px 5px 33px 88px;
+        max-height: 350px;
+    }
+}
+.about__item{
+    @media screen and (min-width:$desktop){
+        display: flex;
+        align-items: flex-start;
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+    }
+}
+.about__icons{
+    fill:#F6D88A;
+    margin-right: 8px;
+}
+.about__text{
+    color: $aboutTextColor;
+    font-family: $secondFont;
+    @media screen and(min-width:$desktop){
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}

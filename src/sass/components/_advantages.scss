@@ -1,0 +1,42 @@
+.advantages{
+    background-color: $aboutTextColor;
+    @media screen and (min-width:$desktop){
+        padding-top: 80px;
+        padding-bottom: 81px;
+    }
+}
+.advantages__title{
+    text-align: center;
+    font-weight: 500;
+    @media screen and (min-width:$desktop){
+        font-size: 35px;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        margin-bottom: 40px;
+    }
+}
+.advantages__list{
+    @media screen and (min-width:$tablet){
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+}
+.advantages__item{
+    @media screen and (min-width:$desktop){
+        &:not(:last-child){
+            margin-right: 163px;
+        }
+    }
+}
+.advantages__container{
+    text-align: center;
+}
+.advantages__text{
+    margin-top: 6px;
+    @media screen and (min-width:$desktop){
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+    }
+}

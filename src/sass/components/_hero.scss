@@ -1,4 +1,5 @@
 .hero{
+    background-color: #B6BBBE;
     max-width: 1600px;
     @media screen and (min-width:$desktop){
         background-image: url(../images/hero/hero-desk.jpg);
@@ -6,6 +7,11 @@
         background-size: cover;
         padding-top: 168px;
         padding-bottom: 278px;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: url(../images/hero/hero-desk@2x.jpg);
+            }
     }
 }
 .hero__container{
@@ -24,10 +30,12 @@
     }
 }
 .hero__text{
+    font-family: $secondFont;
+    color: #455D74;
     @media screen and (min-width:$desktop){
         font-size: 30px;
         line-height: 1.33;
-        max-width: 386px;
+        max-width: 402px;
     }
 }
 .hero__link{
