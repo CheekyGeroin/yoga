@@ -1,0 +1,33 @@
+
+.footer__container{
+    @media screen and (min-width:$tablet){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.rights__text{
+    @media screen and (min-width:$tablet){
+        font-size: 16px;
+        line-height: 1.25;
+        color: $aboutTextColor;
+    }
+}
+.social__list{
+    display: flex;
+    align-items: center;
+
+}
+.social__item{
+    @media screen and (min-width:$desktop){
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+    }
+}
+.social__icons{
+    fill: $mainColor;
+    &:hover, &:focus{
+        fill: #050607;
+    }
+}

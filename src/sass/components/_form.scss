@@ -4,7 +4,7 @@
         background-position: center;
         background-size: cover;
         padding-top: 123px;
-        padding-bottom: 475px;
+        padding-bottom: 77px;
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
@@ -12,7 +12,11 @@
             }
     }
 }
-
+.form{
+    @media screen and(min-width:$desktop){
+        margin-bottom: 379px;
+    }
+}
 .form__title{
     @media screen and (min-width:$desktop){
         font-size: 35px;
