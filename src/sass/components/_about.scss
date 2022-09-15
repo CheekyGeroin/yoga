@@ -1,5 +1,9 @@
 .about{
     background-color: $mainColor;
+    @media screen and (min-width:$tablet){
+        padding-top: 82px;
+        padding-bottom: 80px;
+    }
     @media screen and (min-width:$desktop){
         padding-top: 121px;
         padding-bottom: 121px;
@@ -8,37 +12,73 @@
 .about__title{
     color: $secondTitleColor;
     font-weight: 500;
+    @media screen and (min-width:$tablet){
+        font-size: 35px;
+            line-height: 1;
+            letter-spacing: 0.02em;
+            margin-bottom: 61px;
+        &--desk{
+            display: none;
+        }
+    }
     @media screen and(min-width:$desktop){
         text-align: center;
-        font-size: 35px;
-        line-height: 1;
-        letter-spacing: 0.02em;
         margin-bottom: 40px;
+        &--tabl{
+            display: none;
+        }
     }
 
 }
 .about__container{
-   @media screen and (min-width:$tablet){
+    @media screen and (min-width:$tablet) and (max-width:1279px){
+        max-width: 668px;
+        margin-left: 30px;
+    }
+   @media screen and (min-width:$desktop){
     display: flex;
     align-items: flex-end;
    }
 }
-.about__image{
-    border-radius: 6px;
-    z-index: 100;
+.about__image--desk{
+    display: none;
     @media screen and (min-width:$desktop){
+        display: inline;
+        border-radius: 6px;
+            z-index: 100;
         box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.45);
+    }
+}
+.about__image--tabl{
+    border-radius: 6px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    @media screen and (min-width:$desktop){
+        display: none;
     }
 }
 .about__card{
     background-color: $aboutCardColor;
+    @media screen and (min-width:$tablet){
+        // max-width: 668px;
+        padding-bottom: 34px;
+    }
     @media screen and (min-width:$desktop){
         padding: 33px 5px 33px 88px;
         max-height: 350px;
     }
 }
+.card__container{
+    @media screen and (min-width:$tablet) and (max-width:1279px){
+        margin-left: 46px;
+        margin-right: 46px;
+        // max-width: 576px;
+    }
+}
 .about__item{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         display: flex;
         align-items: flex-start;
         &:not(:last-child){
@@ -48,12 +88,21 @@
 }
 .about__icons{
     fill:#F6D88A;
-    margin-right: 8px;
+    @media screen and (min-width:$tablet){
+        width: 22px;
+        height: 22px;
+        max-width: 100%;
+        margin-right: 6px;
+    }
+    @media screen and (min-width:$desktop){
+        margin-right: 8px;
+    }
 }
 .about__text{
     color: $aboutTextColor;
     font-family: $secondFont;
-    @media screen and(min-width:$desktop){
+    @media screen and(min-width:$tablet){
+        max-width: 546px;
         font-size: 20px;
         line-height: 1.5;
     }

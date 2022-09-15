@@ -1,5 +1,28 @@
 .hero{
     background-color: #B6BBBE;
+    background-image: url(../images/hero/hero-mob.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-top: 45px;
+        padding-bottom: 89px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/hero/hero-mob@2x.jpg);
+            }
+    @media screen and (min-width:$tablet){
+        background-image: url(../images/hero/hero-tabl.jpg);
+            background-position: center;
+            background-size: cover;
+            padding-top: 134px;
+            padding-bottom: 277px;
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/hero/hero-tabl@2x.jpg);
+                }
+    }
     @media screen and (min-width:$desktop){
         background-image: url(../images/hero/hero-desk.jpg);
         background-position: center;
@@ -14,12 +37,12 @@
     }
 }
 .hero__container{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         margin-bottom: 70px;
     }
 }
 .hero__title{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         font-size: 55px;
         line-height: 1.36;
         letter-spacing: 0.02em;
@@ -31,23 +54,32 @@
 .hero__text{
     font-family: $secondFont;
     color: #455D74;
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         font-size: 30px;
-        line-height: 1.33;
+            line-height: 1.33;
+            max-width: 434px;
+    }
+    @media screen and (min-width:$desktop){
         max-width: 402px;
     }
 }
 .hero__link{
+    @media screen and (min-width:$tablet){
+        padding: 30px 40px;
+        font-size: 30px;
+            line-height: 2.5;
+            background: radial-gradient(58.24% 712.55% at 50% 54.4%, #F6D88A 0%, #FEE690 64.9%, #FFF0CB 98.75%);
+            box-shadow: 0px 0px 15px #F2CD89;
+            border-radius: 30px 0 30px 0;
+        
+            &:hover,
+            &:focus {
+                background: radial-gradient(58.24% 712.55% at 50% 54.4%, #FEE690 64.9%, #FFF0CB 98.75%);
+                box-shadow: 0px 0px 25px #FEE690;
+            }
+    }
     @media screen and (min-width:$desktop){
         padding: 33px 38px;
-        font-size: 30px;
-        line-height: 2.5;
-        background: radial-gradient(58.24% 712.55% at 50% 54.4%, #F6D88A 0%, #FEE690 64.9%, #FFF0CB 98.75%);
-        box-shadow: 0px 0px 15px #F2CD89;
-        border-radius: 30px 0 30px 0;
-        &:hover,&:focus{
-            background: radial-gradient(58.24% 712.55% at 50% 54.4%, #FEE690 64.9%, #FFF0CB 98.75%);
-            box-shadow: 0px 0px 25px #FEE690;
-        }
+        
     }
 }

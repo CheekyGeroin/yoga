@@ -4,12 +4,49 @@
     padding-bottom: 21px;
     
 }
+.header__container{
+    @media screen and (max-width:1279px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+.logo__link{
+    @media screen and (min-width:$desktop){
+        display: none;
+    }
+}
+.menu{
+    @media screen and (max-width:1279px){
+        display: none;
+        &.is-open{
+            padding: 97px 0 0 50px;
+            display: block;
+            position: absolute;
+            top: 110px;
+            left: 0;
+            width: 100%;
+            background-color: $mainColor;
+            height: 700px;
+            text-align: left;
+        }
+    }
+}
 .nav__list{
+
+   @media screen and (min-width:$desktop){
     display: flex;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
+   }
 }
 .nav__item{
+    @media screen and (min-width:$tablet) and (max-width:1279px){
+        :not(:last-child){
+            margin-bottom: 52px;
+        }
+    }
     @media screen and (min-width:$desktop){
         &:not(:last-child){
             margin-right: 60px;
@@ -18,24 +55,138 @@
 }
 .nav__link{
     color: $headerTextColor;
-    position: relative;
+    @media screen and (max-width:1279px){
+        &--logo{
+            display: none;
+        }
+    }
+    @media screen and(min-width:$tablet){
+        font-size: 55px;
+            line-height: 1.36;
+            letter-spacing: 0.02em;
+    }
     @media screen and (min-width:$desktop){
         font-size: 35px;
             line-height: 1;
             letter-spacing: 0.02em;
-            &:hover,&:focus{
-                &::after{
+            padding-bottom: 55px;
+            
+    }
+}
+.nav__about{
+    &--active {
+            position: relative;
+        }
+    
+                &--active::after {
                     position: absolute;
-                    content: "";
-                    bottom: 0;
+                    content: " ";
+                    left:0;
+                    bottom: 1px;
                     width: 100%;
                     height: 3px;
                     background-color: #FEE690;
                     border-radius: 16px;
-
                 }
-                color: #455D74;
-                background: linear-gradient(176.16deg, rgba(255, 240, 203, 0) -0.36%, rgba(255, 240, 203, 0.069) 51.03%, rgba(246, 216, 138, 0.21) 121.9%);;
-            }
+        &:hover,
+        &:focus {
+            
+            color: #455D74;
+            background: linear-gradient(176.16deg, rgba(255, 240, 203, 0) -0.36%, rgba(255, 240, 203, 0.069) 51.03%, rgba(246, 216, 138, 0.21) 121.9%);
+            ;
+        }
+}
+.nav__adv {
+    &--active {
+        position: relative;
     }
+
+    &--active::after {
+        position: absolute;
+        content: " ";
+        left: 0;
+        bottom: 1px;
+        width: 100%;
+        height: 3px;
+        background-color: #FEE690;
+        border-radius: 16px;
+    }
+
+    &:hover,
+    &:focus {
+
+        color: #455D74;
+        background: linear-gradient(176.16deg, rgba(255, 240, 203, 0) -0.36%, rgba(255, 240, 203, 0.069) 51.03%, rgba(246, 216, 138, 0.21) 121.9%);
+        ;
+    }
+}
+.nav__time{
+    &--active {
+        position: relative;
+    }
+
+    &--active::after {
+        position: absolute;
+        content: " ";
+        left: 0;
+        bottom: 1px;
+        width: 100%;
+        height: 3px;
+        background-color: #FEE690;
+        border-radius: 16px;
+    }
+
+    &:hover,
+    &:focus {
+
+        color: #455D74;
+        background: linear-gradient(176.16deg, rgba(255, 240, 203, 0) -0.36%, rgba(255, 240, 203, 0.069) 51.03%, rgba(246, 216, 138, 0.21) 121.9%);
+        ;
+    }
+}
+.nav__form {
+    &--active {
+        position: relative;
+    }
+
+    &--active::after {
+        position: absolute;
+        content: " ";
+        left: 0;
+        bottom: 1px;
+        width: 100%;
+        height: 3px;
+        background-color: #FEE690;
+        border-radius: 16px;
+    }
+
+    &:hover,
+    &:focus {
+
+        color: #455D74;
+        background: linear-gradient(176.16deg, rgba(255, 240, 203, 0) -0.36%, rgba(255, 240, 203, 0.069) 51.03%, rgba(246, 216, 138, 0.21) 121.9%);
+        ;
+    }
+}
+.button__svg{
+    fill: #fff;
+}
+.open__button{
+    background-color: $mainColor;
+    border: none;
+    cursor: pointer;
+    
+    @media screen and (min-width:$desktop){
+        display: none;
+    }
+}
+.close__button{
+    position: absolute;
+    top: -65px;
+    right: 22px;
+    background-color: #fff;
+    border: none;
+}
+.hide{
+    display: none;
 }

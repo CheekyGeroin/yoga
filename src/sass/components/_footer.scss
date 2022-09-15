@@ -19,7 +19,7 @@
 
 }
 .social__item{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         &:not(:last-child){
             margin-right: 40px;
         }
