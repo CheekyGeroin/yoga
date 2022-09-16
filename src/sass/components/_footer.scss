@@ -7,11 +7,12 @@
     }
 }
 .rights__text{
-    @media screen and (min-width:$tablet){
         font-size: 16px;
         line-height: 1.25;
         color: $aboutTextColor;
-    }
+        @media screen and (max-width:767px){
+            margin-bottom: 25px;
+        }
 }
 .social__list{
     display: flex;
@@ -19,11 +20,9 @@
 
 }
 .social__item{
-    @media screen and (min-width:$tablet){
         &:not(:last-child){
             margin-right: 40px;
         }
-    }
 }
 .social__icons{
     fill: $mainColor;

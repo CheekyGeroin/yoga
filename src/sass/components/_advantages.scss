@@ -1,5 +1,7 @@
 .advantages{
     background-color: $aboutTextColor;
+    padding-top: 41px;
+    padding-bottom: 49px;
     @media screen and (min-width:$tablet){
         padding-top: 60px;
         padding-bottom: 51px;
@@ -10,12 +12,13 @@
     }
 }
 .advantages__title{
+    font-size: 35px;
+    line-height: 1;
+    letter-spacing: 0.02em;
     text-align: center;
     font-weight: 500;
+    margin-bottom: 40px;
     @media screen and (min-width:$tablet){
-        font-size: 35px;
-        line-height: 1;
-        letter-spacing: 0.02em;
         margin-bottom: 40px;
     }
 }
@@ -26,8 +29,16 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+    @media screen and (min-width:$desktop){
+        flex-wrap: nowrap;
+    }
 }
 .advantages__item{
+    @media screen and (max-width:767px){
+        &:not(:last-child){
+            margin-bottom: 40px;
+        }
+    }
     @media screen and (min-width:$tablet){
         &:not(:last-child){
             margin-right: 166px;
@@ -52,9 +63,7 @@
 }
 .advantages__text{
     margin-top: 6px;
-    @media screen and (min-width:$tablet){
-        font-size: 20px;
+    font-size: 20px;
         line-height: 1.5;
         letter-spacing: 0.03em;
-    }
 }

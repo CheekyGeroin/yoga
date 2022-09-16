@@ -1,90 +1,108 @@
-.sign-up{
-    @media screen and (min-width:$tablet){
-        background-image: url(../images/hero/hero-tabl.jpg);
-            background-position: center;
-            background-size: cover;
-            padding-top: 75px;
-            padding-bottom: 33px;
-            @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    background-image: url(../images/hero/hero-tabl@2x.jpg);
-                }
+.sign-up {
+  background-image: url(../images/hero/hero-mob.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 58px;
+  padding-bottom: 45px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/hero-mob@2x.jpg);
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/hero/hero-tabl.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 33px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/hero-tabl@2x.jpg);
     }
-    @media screen and (min-width:$desktop){
-        background-image: url(../images/hero/hero-desk.jpg);
-        background-position: center;
-        background-size: cover;
-        padding-top: 123px;
-        padding-bottom: 77px;
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/hero/hero-desk@2x.jpg);
-            }
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/hero/hero-desk.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 123px;
+    padding-bottom: 77px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/hero-desk@2x.jpg);
     }
+  }
 }
-.form{
-    @media screen and (min-width:$tablet){
-        margin-bottom: 420px;
-    }
-    @media screen and(min-width:$desktop){
-        margin-bottom: 379px;
-    }
+.form {
+  margin-bottom: 136px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 420px;
+  }
+  @media screen and(min-width:$desktop) {
+    margin-bottom: 379px;
+  }
 }
-.form__title{
-    @media screen and (min-width:$tablet){
-        font-size: 35px;
-        line-height: 1;
-        letter-spacing: 0.02em;
-        font-weight: 500;
-        margin-bottom: 54px;
-    }
+.form__title {
+  font-size: 35px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 54px;
+  }
 }
-.form__item{
-    @media screen and (min-width:$tablet){
-        &:not(:last-child){
-            margin-bottom: 25px;
-        }
+.form__item {
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 25px;
     }
-    @media screen and (min-width:$desktop){
-        &:not(:last-child){
-            margin-bottom: 18px;
-        }
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 18px;
     }
+  }
 }
-.form__label{
-    position: relative;
+.form__label {
+  position: relative;
 }
-.form__input{
-    border: 3px solid #F6D88A;
-    border-radius: 20px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    &:focus{
-        box-shadow:0px 0px 25px #FEE690;
+.form__input {
+  font-size: 17px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  border: 3px solid #f6d88a;
+  border-radius: 20px;
+  padding: 15px 0 15px 50px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  &:focus {
+    box-shadow: 0px 0px 25px #fee690;
+  }
+  &::placeholder {
+    font-size: 17px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $mainColor;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 30px;
+    padding: 12px 0 12px 57px;
+    &::placeholder {
+      font-size: 30px;
     }
-    @media screen and (min-width:$tablet){
-        font-size: 30px;
-            line-height: 1.17;
-            letter-spacing: 0.02em;
-        padding: 12px 0 12px 57px;
-        &::placeholder {
-                font-size: 30px;
-                line-height: 1.17;
-                letter-spacing: 0.02em;
-                color: $mainColor;
-            }
-    }
+  }
 }
-.form__icons{
-    position: absolute;
-    @media screen and (min-width:$tablet){
-        top: -10px;
-        left: 10px;
-    }
-    @media screen and (min-width:$desktop){
-        top: -10px;
-        left: 10px;
-    }
+.form__icons {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  @media screen and (min-width: $tablet) {
+    top: -10px;
+    left: 10px;
+  }
 }

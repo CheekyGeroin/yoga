@@ -1,45 +1,86 @@
 <div class="container header__container" id="header">
   <div class="logo">
     <a class="logo__link" href="#hero">
-      <img srcset="
-                        ./images/logo-mob.png      64w,
-                        ./images/logo-mob@2x.png  128w,
-                        ./images/logo-desk.png    142w,
-                        ./images/logo-desk@2x.png 284w
-                      " sizes="(min-width:768px) 142px, (max-width:767px) 64px, 100vw" src="./images/logo-mob.png"
-        alt="logo" />
+      <img
+        srcset="
+          ./images/logo-mob.png      64w,
+          ./images/logo-mob@2x.png  128w,
+          ./images/logo-desk.png    142w,
+          ./images/logo-desk@2x.png 284w
+        "
+        sizes="(min-width:768px) 142px, (max-width:767px) 64px, 100vw"
+        src="./images/logo-mob.png"
+        alt="logo"
+      />
     </a>
   </div>
   <div class="menu__button">
     <button class="open__button" type="button">
-      <svg class="button__svg" width="72" height="38">
+      <svg class="button__svg button__svg--open" width="72" height="38">
         <use href="./images/icons.svg#menu"></use>
       </svg>
     </button>
   </div>
   <div class="menu">
     <button class="close__button" type="button">
-      <svg class="button__svg" width="54" height="0">
+      <svg class="button__svg button__svg--close" width="54" height="20">
         <use href="./images/icons.svg#arrow"></use>
       </svg>
     </button>
-    <nav>
+    <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link nav__about" href="#about">About us</a></li>
-        <li class="nav__item"><a class="nav__link nav__adv" href="#advantages">Our advantages</a></li>
         <li class="nav__item">
+          <a class="nav__link nav__about" href="#about">About us</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__adv" href="#advantages">Our advantages</a>
+        </li>
+        <li class="nav__item logo-link">
           <a class="nav__link--logo" href="#hero">
-            <img srcset="
-                  ./images/logo-mob.png      64w,
-                  ./images/logo-mob@2x.png  128w,
-                  ./images/logo-desk.png    142w,
-                  ./images/logo-desk@2x.png 284w
-                " sizes="(min-width:768px) 142px, (max-width:767px) 64px, 100vw" src="./images/logo-mob.png" alt="logo" />
+            <img
+              srcset="
+                ./images/logo-mob.png      64w,
+                ./images/logo-mob@2x.png  128w,
+                ./images/logo-desk.png    142w,
+                ./images/logo-desk@2x.png 284w
+              "
+              sizes="(min-width:768px) 142px, (max-width:767px) 64px, 100vw"
+              src="./images/logo-mob.png"
+              alt="logo"
+            />
           </a>
         </li>
-        <li class="nav__item"><a class="nav__link nav__time" href="#timetable">Timetable</a></li>
-        <li class="nav__item"><a class="nav__link nav__form" href="#form">Sign up for the lessons</a></li>
+        <li class="nav__item">
+          <a class="nav__link nav__time" href="#timetable">Timetable</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__form" href="#form"
+            >Sign up for the lessons</a
+          >
+        </li>
       </ul>
     </nav>
+    <div class="header__social">
+      <ul class="hsocial__list">
+        <li class="hsocial__item">
+          <a class="hsocial__link" href="https://www.facebook.com/">
+            <svg class="social__svg" width="25" height="25">
+              <use href="./images/icons.svg#facebook"></use></svg
+          ></a>
+        </li>
+        <li class="hsocial__item">
+          <a class="hsocial__link" href="https://www.instagram.com/">
+            <svg class="social__svg" width="25" height="25">
+              <use href="./images/icons.svg#instagram"></use></svg
+          ></a>
+        </li>
+        <li class="hsocial__item">
+          <a class="hsocial__link" href="https://www.youtube.com/">
+            <svg class="social__svg" width="25" height="25">
+              <use href="./images/icons.svg#youtube"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

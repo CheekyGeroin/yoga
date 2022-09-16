@@ -1,5 +1,7 @@
 .about{
     background-color: $mainColor;
+    padding-top: 60px;
+    padding-bottom: 60px;
     @media screen and (min-width:$tablet){
         padding-top: 82px;
         padding-bottom: 80px;
@@ -12,10 +14,16 @@
 .about__title{
     color: $secondTitleColor;
     font-weight: 500;
+    font-size: 35px;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        margin-bottom: 30px;
+    @media screen and (max-width: 767px){
+        &--tabl{
+            display: none;
+        }
+    }
     @media screen and (min-width:$tablet){
-        font-size: 35px;
-            line-height: 1;
-            letter-spacing: 0.02em;
             margin-bottom: 61px;
         &--desk{
             display: none;
@@ -61,6 +69,9 @@
 }
 .about__card{
     background-color: $aboutCardColor;
+    @media screen and (max-width:767px){
+        padding: 25px 18px;
+    }
     @media screen and (min-width:$tablet){
         // max-width: 668px;
         padding-bottom: 34px;
@@ -78,20 +89,21 @@
     }
 }
 .about__item{
-    @media screen and (min-width:$tablet){
-        display: flex;
-        align-items: flex-start;
+    display: flex;
+    align-items: flex-start;    
         &:not(:last-child){
             margin-bottom: 25px;
         }
-    }
 }
 .about__icons{
     fill:#F6D88A;
+    width: 15px;
+    height: 15px;
+    max-width: 100%;
+    margin-right: 11px;
     @media screen and (min-width:$tablet){
         width: 22px;
         height: 22px;
-        max-width: 100%;
         margin-right: 6px;
     }
     @media screen and (min-width:$desktop){
@@ -101,6 +113,7 @@
 .about__text{
     color: $aboutTextColor;
     font-family: $secondFont;
+    max-width: 214px;
     @media screen and(min-width:$tablet){
         max-width: 546px;
         font-size: 20px;
